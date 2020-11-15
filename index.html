@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio player</title>
+    <!-- Font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom css -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    
+    <!-- Container -->
+    <div class="container">
+        <!-- Speaker left-->
+        <div class="speaker">
+            <img src="./assets/images/speaker.png" class="speaker-img" alt="loudspeaker" width="120" height="120">
+        </div>
+        <!-- Player -->
+        <div class="player">
+            <!-- Playlist -->
+            <div class="menu">
+                <a href="#"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+            <!-- Audio details -->
+            <div class="audio">
+                    <img src="./assets/images/edith-paris.jpg" class="audio-img" alt="audio poster">               
+                <div class="audio-title">
+                    <h1>Unknown song</h1>
+                </div>
+                <div class="audio-artist">
+                    <h4>Unknown Artist</h4>
+                </div>
+            </div>
+            <!-- Audi time -->
+            <div class="time">
+                <span>00:45</span>
+                <span>02:18</span>
+            </div>
+            <div class="duration">
+                <div class="duration-left"></div>
+            </div>
+            <!-- Player buttons -->
+            <div class="player-btns">
+                <div class="play-btn">
+                    <a href="#"><i class="fas fa-backward"></i></a>
+                    <a href="#"><i class="fas fa-play"></i></a>
+                    <a href="#"><i class="fas fa-forward"></i></a>
+                </div>
+                <div class="tool-btn">
+                    <a href="#"><i class="fas fa-random"></i></a>                    
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                </div>
+            </div>
+            <a href="#" class="volume"><i class="fa fa-volume-up"></i></a>
+        </div>
+        <!-- Speaker right -->
+        <div class="speaker">
+            <img src="./assets/images/speaker.png" class="speaker-img" alt="loudspeaker" width="120" height="120">
+        </div>
+    </div>
+<!-- Custom js -->
     <script src="/app.js"></script>
 </body>
 </html>

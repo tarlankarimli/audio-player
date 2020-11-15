@@ -1,0 +1,112 @@
+:root {
+  font-size: 10px; }
+
+* {
+  box-sizing: border-box;
+  color: #222222;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+body {
+  align-items: center;
+  background: #222e2e;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
+
+.container {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center; }
+  .container .speaker {
+    border: 2px solid #000;
+    box-shadow: 1px 2px 5px 1px;
+    border-radius: 4px;
+    background-image: url("/assets/images/speaker-bg2.jpg");
+    height: 24rem;
+    margin: 0 5px;
+    position: relative;
+    width: 18rem; }
+    .container .speaker-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .container .player {
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-image: url("/assets/images/speaker-bg2.jpg");
+    background-size: contain;
+    height: 60rem;
+    position: relative;
+    width: 40rem; }
+    .container .player .menu {
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+      .container .player .menu i {
+        font-size: 3rem; }
+    .container .player .audio {
+      align-items: center;
+      background: #e9e3db;
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      justify-content: center; }
+      .container .player .audio-img {
+        border-radius: 4px;
+        height: 50%;
+        width: 80%; }
+      .container .player .audio-title {
+        font-size: 1.5rem;
+        margin: 15px 0; }
+      .container .player .audio-artist {
+        font-size: 2rem; }
+    .container .player .time {
+      border-radius: 4px;
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-between;
+      padding: 10px 15px 0; }
+      .container .player .time span {
+        color: #fff; }
+    .container .player .duration {
+      border-radius: 4px;
+      color: #fff;
+      background: #fff;
+      height: 4px;
+      margin: 10px auto;
+      width: 100%; }
+      .container .player .duration-left {
+        background: #000;
+        height: 4px;
+        width: 0%; }
+    .container .player-btns {
+      align-items: center;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container .player-btns i {
+        color: #fff; }
+      .container .player-btns .play-btn .fas {
+        font-size: 3rem;
+        margin: 10px 0;
+        padding: 0 20px; }
+      .container .player-btns .tool-btn {
+        bottom: 15px;
+        font-size: 2rem;
+        position: absolute; }
+        .container .player-btns .tool-btn a {
+          margin: 0 10px; }
+    .container .player .volume {
+      font-size: 2rem;
+      bottom: 10px;
+      position: absolute;
+      right: 10px; }
+      .container .player .volume i {
+        color: #fff; }
