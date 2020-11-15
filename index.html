@@ -25,12 +25,8 @@
             <!-- Audio details -->
             <div class="audio">
                     <img src="./assets/images/edith-paris.jpg" class="audio-img" alt="audio poster">               
-                <div class="audio-title">
-                    <h1>Unknown song</h1>
-                </div>
-                <div class="audio-artist">
-                    <h4>Unknown Artist</h4>
-                </div>
+                <div class="audio-title"></div>
+                <div class="audio-artist"></div>
             </div>
             <!-- Audi time -->
             <div class="time">
@@ -43,13 +39,14 @@
             <!-- Player buttons -->
             <div class="player-btns">
                 <div class="play-btn">
-                    <a href="#"><i class="fas fa-backward"></i></a>
-                    <a href="#"><i class="fas fa-play"></i></a>
-                    <a href="#"><i class="fas fa-forward"></i></a>
+                    <a href="#" onclick="prevAudio()"><i class="fas fa-backward"></i></a>
+                    <a href="#" onclick="playAudio()" class="play_audio"><i class="fas fa-play"></i></a>
+                    <a href="#" onclick="nextAudio()"><i class="fas fa-forward"></i></a>
                 </div>
                 <div class="tool-btn">
                     <a href="#"><i class="fas fa-random"></i></a>                    
                     <a href="#"><i class="fas fa-redo-alt"></i></a>
+                    <a href="#"><i class="fas fa-stop"></i></a>
                 </div>
             </div>
             <a href="#" class="volume"><i class="fa fa-volume-up"></i></a>
